@@ -9,8 +9,51 @@
 
 /* Proprietà div */
 [class*="col-"]{
-  color:blue;
-  height: 200px;
+  color:black;
+  font-weight: bold;
+  height: 230px; /* 200px + 30 di padding */
   background-color: pink;
   border: 1px solid black;
+
+  /* Centra testo nella cella */
+  line-height: 200px;
+  text-align: center;
+}
+
+
+/* Aggiungi padding alle celle nested */
+.container [class*="col-"]{
+  padding: 15px;
+
+}
+
+/* .container [class*="col-"] .container{
+  background-color: green;
+} */
+
+/* Seleziona le colonne nested */
+.container [class*="col-"] .container [class*="col-"]{
+  background-color: lightcoral;
+  border: 1px solid white;
+  height: 200px;  /* 200-30 di padding*/
+
+  /* Resetta line-height */
+  line-height: normal;
+
+  /* Centra testo nella colonna */
+  /* position: relative;
+  top:10px; */
+  /* top:50%;
+  left:50%;
+  transform: translate("-50%";"-50%"); */ */
+
+}
+
+.container [class*="col-"] .container [class*="col-"] #text{
+  color: white;
+}
+
+/* Scrivi "nested" nel contenuto delle colonne nested */
+.container [class*="col-"] .container [class*="col-"]:before{
+  content: "Nested ";
 }
