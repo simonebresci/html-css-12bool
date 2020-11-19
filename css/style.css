@@ -1,8 +1,16 @@
 /* PROPRIETA' GENERALI */
 *{
   box-sizing: border-box;
-  margin:0;
+  margin:0 auto;
   padding:0;
   /* Font standard */
   font-family: 'Montserrat', sans-serif;
+}
+
+/* Proprietà div */
+[class*="col-"]{
+  color:blue;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid black;
 }
