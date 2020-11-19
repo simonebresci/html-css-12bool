@@ -1,0 +1,43 @@
+/* PROPRIETA' GENERALI */
+*{
+  box-sizing: border-box;
+  margin:0 auto;
+  padding:0;
+  /* Font standard */
+  font-family: 'Montserrat', sans-serif;
+}
+/* /PROPRIETA' GENERALI */
+
+/* Proprietà colonna */
+
+[class*="col-"]{
+  /* border: 1px solid black; */
+  height: 50px;
+  /* width: 100px; */
+}
+
+.border-nero{
+  /* border: 1px solid black; */
+}
+
+.nero{
+  background-color: white;
+}
+
+.nero{
+  background-color: black;
+}
+
+.marrone{
+  background-color: #593200;
+}
+
+.pink{
+  background-color: #e192ff;
+}
+
+.grigio{
+  background-color: #a39b9c;
+}
+
+/* /COLONNE NESTED */

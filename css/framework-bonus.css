@@ -1,0 +1,181 @@
+/* Regole generali framework */
+
+/* container generico */
+.container{
+  max-width: 1170px;
+}
+/* Container generico con clearfix*/
+.container::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+/* Float left su tutte le colonne contenenti la parola "col-""*/
+[class*="col-"]{
+  color: red;
+  float:left;
+}
+
+/* DEFINIZIONE DI TUTTE LE LARGHEZZE DELLE COLONNE LAYOUT */
+/* Col-1 */
+.col-1{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 1);
+}
+/* Col-2 */
+.col-2{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 2);
+}
+/* Col-3 */
+.col-3{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 3);
+}
+/* Col-4 */
+.col-4{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 4);
+}
+/* Col-5 */
+.col-5{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 5);
+}
+/* Col-6 */
+.col-6{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 6);
+}
+/* Col-7 */
+.col-7{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 7);
+}
+/* Col-8 */
+.col-8{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 8);
+}
+/* Col-9 */
+.col-9{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 9);
+}
+/* Col-10 */
+.col-10{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 10);
+}
+/* Col-11 */
+.col-11{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 11);
+}
+/* Col-12 */
+.col-12{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 12);
+}
+/* Col-24 */
+.col-13{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 13);
+}
+/* Col-24 */
+.col-14{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 14);
+}
+/* Col-24 */
+.col-15{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 15);
+}
+/* Col-24 */
+.col-16{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 16);
+}
+/* Col-24 */
+.col-17{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 17);
+}
+/* Col-24 */
+.col-18{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 18);
+}
+/* Col-24 */
+.col-19{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 19);
+}
+/* Col-24 */
+.col-20{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 20);
+}
+/* Col-24 */
+.col-21{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 21);
+}
+/* Col-24 */
+.col-22{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 22);
+}
+/* Col-24 */
+.col-23{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 23);
+}
+.col-24{
+  /* Larghezza colonna espressa in dodicesimi */
+  width: calc((100%) / 24 * 24);
+}
+
+
+.col-1-offset{
+  margin-left: calc((100%) / 24 * 1);
+}
+.col-2-offset{
+  margin-left: calc((100%) / 24 * 2);
+}
+.col-3-offset{
+  margin-left: calc((100%) / 24 * 3);
+}
+.col-4-offset{
+  margin-left: calc((100%) / 24 * 4);
+}
+.col-5-offset{
+  margin-left: calc((100%) / 24 * 5);
+}
+.col-6-offset{
+  margin-left: calc((100%) / 24 * 6);
+}
+.col-7-offset{
+  margin-left: calc((100%) / 24 * 7);
+}
+.col-8-offset{
+  margin-left: calc((100%) / 24 * 8);
+}
+.col-9-offset{
+  margin-left: calc((100%) / 24 * 9);
+}
+.col-10-offset{
+  margin-left: calc((100%) / 24 * 10);
+}
+.col-11-offset{
+  margin-left: calc((100%) / 24 * 11);
+}
+.col-12-offset{
+  margin-left: calc((100%) / 24 * 12);
+}
+
+/* Da finire gli offset fino a 24! */
+
+/* /DEFINIZIONE DI TUTTE LE LARGHEZZE DELLE COLONNE LAYOUT */
