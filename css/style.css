@@ -6,8 +6,9 @@
   /* Font standard */
   font-family: 'Montserrat', sans-serif;
 }
+/* /PROPRIETA' GENERALI */
 
-/* Proprietà div */
+/* Proprietà colonna */
 [class*="col-"]{
   color:black;
   font-weight: bold;
@@ -20,19 +21,16 @@
   text-align: center;
 }
 
+/* COLONNE NESTED */
 
 /* Aggiungi padding alle celle nested */
 .container [class*="col-"]{
-  padding: 15px;
-
+  padding: 15px; /* volutamente più spesso dell'esercizio*/
 }
-
-/* .container [class*="col-"] .container{
-  background-color: green;
-} */
 
 /* Seleziona le colonne nested */
 .container [class*="col-"] .container [class*="col-"]{
+  position: relative;
   background-color: lightcoral;
   border: 1px solid white;
   height: 200px;  /* 200-30 di padding*/
@@ -40,20 +38,14 @@
   /* Resetta line-height */
   line-height: normal;
 
+}
+
+.container [class*="col-"] .container [class*="col-"] span {
   /* Centra testo nella colonna */
-  /* position: relative;
-  top:10px; */
-  /* top:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
   left:50%;
-  transform: translate("-50%";"-50%"); */ */
-
 }
 
-.container [class*="col-"] .container [class*="col-"] #text{
-  color: white;
-}
-
-/* Scrivi "nested" nel contenuto delle colonne nested */
-.container [class*="col-"] .container [class*="col-"]:before{
-  content: "Nested ";
-}
+/* /COLONNE NESTED */

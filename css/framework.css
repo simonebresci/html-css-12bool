@@ -1,16 +1,9 @@
 /* Regole generali framework */
-*{
-  background-color: orange;
-}
 
-
-/* Classi framework */
-
-
+/* container generico */
 .container{
   max-width: 1170px;
 }
-
 /* Container generico con clearfix*/
 .container::after{
   content:"";
@@ -18,13 +11,13 @@
   clear:both;
 }
 
-/* Float left su tutte le colonne */
+/* Float left su tutte le colonne contenenti la parola "col-""*/
 [class*="col-"]{
   color: red;
   float:left;
 }
 
-
+/* DEFINIZIONE DI TUTTE LE LARGHEZZE DELLE COLONNE LAYOUT */
 /* Col-1 */
 .col-1{
   /* Larghezza colonna espressa in dodicesimi */
@@ -85,3 +78,4 @@
   /* Larghezza colonna espressa in dodicesimi */
   width: calc((100%) / 12 * 12);
 }
+/* /DEFINIZIONE DI TUTTE LE LARGHEZZE DELLE COLONNE LAYOUT */
